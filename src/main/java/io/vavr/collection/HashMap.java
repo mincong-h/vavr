@@ -933,6 +933,11 @@ public final class HashMap<K, V> implements Map<K, V>, Serializable {
     }
 
     @Override
+    public java.util.HashMap<K, V> asJava() {
+        return toJavaMap();
+    }
+
+    @Override
     public Stream<V> values() {
         return trie.valuesIterator().toStream();
     }

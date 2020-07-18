@@ -583,6 +583,11 @@ public abstract class BitSet<T> implements SortedSet<T>, Serializable {
         return toJavaSet(ignore -> new java.util.TreeSet<>(comparator()));
     }
 
+    @Override
+    public final java.util.SortedSet<T> asJava() {
+        return toJavaSet();
+    }
+
     /**
      * Transforms this {@code BitSet}.
      *

@@ -306,4 +306,7 @@ public interface SortedMap<K, V> extends Map<K, V>, Ordered<K> {
     @Override
     java.util.SortedMap<K, V> toJavaMap();
 
+    @Override
+    java.util.SortedMap<K, V> asJava();
+
 }

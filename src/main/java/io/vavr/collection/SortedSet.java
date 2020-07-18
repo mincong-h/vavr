@@ -223,6 +223,9 @@ public interface SortedSet<T> extends Set<T>, Ordered<T> {
     java.util.SortedSet<T> toJavaSet();
 
     @Override
+    java.util.SortedSet<T> asJava();
+
+    @Override
     SortedSet<T> union(Set<? extends T> elements);
 
     @Override

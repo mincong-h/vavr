@@ -646,6 +646,8 @@ public interface Map<K, V> extends Traversable<Tuple2<K, V>>, PartialFunction<K,
      */
     java.util.Map<K, V> toJavaMap();
 
+    java.util.Map<K, V> asJava();
+
     /**
      * Transforms this {@code Map}.
      *

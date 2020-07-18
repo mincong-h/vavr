@@ -172,6 +172,8 @@ public interface Set<T> extends Traversable<T>, Function1<T, Boolean>, Serializa
     @Override
     java.util.Set<T> toJavaSet();
 
+    java.util.Set<T> asJava();
+
     /**
      * Adds all of the elements of {@code that} set to this set, if not already present.
      * <p>

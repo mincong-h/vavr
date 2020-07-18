@@ -997,6 +997,11 @@ public final class LinkedHashMap<K, V> implements Map<K, V>, Serializable {
     }
 
     @Override
+    public java.util.LinkedHashMap<K, V> asJava() {
+        return toJavaMap();
+    }
+
+    @Override
     public Seq<V> values() {
         return map(t -> t._2);
     }

@@ -873,6 +873,11 @@ public final class HashSet<T> implements Set<T>, Serializable {
         return toJavaSet(java.util.HashSet::new);
     }
 
+    @Override
+    public java.util.HashSet<T> asJava() {
+        return toJavaSet();
+    }
+
     @SuppressWarnings("unchecked")
     @Override
     public HashSet<T> union(Set<? extends T> elements) {

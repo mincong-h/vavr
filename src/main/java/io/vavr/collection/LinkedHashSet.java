@@ -893,6 +893,11 @@ public final class LinkedHashSet<T> implements Set<T>, Serializable {
         return toJavaSet(java.util.LinkedHashSet::new);
     }
 
+    @Override
+    public java.util.LinkedHashSet<T> asJava() {
+        return toJavaSet();
+    }
+
     /**
      * Adds all of the elements of {@code elements} to this set, replacing existing ones if they already present.
      * <p>
